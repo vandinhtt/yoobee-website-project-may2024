@@ -1,0 +1,129 @@
+/* so border and padding get included inside the content */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Times New Roman", Times, serif;
+}
+
+header {
+  background-color: var(--primary);
+  position: fixed;
+  width: 100%; /*fix the width of the header*/
+  top: 0;
+  z-index: 1000; /* Ensure the header is on top of other content */
+}
+
+main {
+  padding-top: 150px; /* Add padding to the top of the content to prevent it from being hidden behind the fixed header */
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1000px; /*to set gap of both sides*/
+  margin: 0 auto; /* This centers the content horizontally */
+
+}
+
+body {
+  color: var(--defaultblack);
+}
+
+footer {
+  height: 220px;
+  background-color: var(--primary);
+  text-align: center;
+  max-width: 100%;
+}
+
+footer img {
+  width: 100px;
+  height: auto;
+  margin-top: 15px;
+  margin: 0 15px 0 15px; /* top right bottom left */
+}
+
+footer p {
+  text-align: center;
+}
+
+nav a {
+  color: var(--defaultblack);
+  font-size: 1.1em;
+  text-transform: capitalize;
+  text-decoration: none; /* none, underline, overline, line-through,...*/
+  text-align: center;
+  margin: 0 15px 15px 15px;
+  height: 50px;
+  line-height: 50px;
+}
+
+nav {
+  text-align: center;
+}
+
+/* pseudo classes */
+nav a:hover {
+  color: var(--defaultwhite);
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 3rem; /* R stands for root, It will looks at the HTML font size, doesn’t matter what is the parent font size */
+  font-weight: bold;
+  text-transform: capitalize;
+  margin: 20px;
+  padding-bottom: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 20px 0;
+  text-transform: capitalize;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  line-height: 1.2;
+  text-align: justify; /* canh deu text */
+}
+
+.form {
+  margin-bottom: 10px;
+}
+
+.form p {
+  font-weight: bold;
+  font-size: 1.2;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 180px;
+  height: 40px;
+  border: 2px solid;
+  text-align: center;
+  line-height: 40px;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--defaultwhite);
+  margin: 20px;
+  cursor: pointer;
+  transition-property: background-color 0.5s;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+  /* margin-top: 15px; */
+}

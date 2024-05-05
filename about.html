@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="about paintings, about pictures" />
+    <meta name="language" content="EN" />
+    <meta
+      name="description"
+      content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, minus"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Green</title>
+    <link rel="stylesheet" href="/assets/main.css" />
+    <link rel="icon" href="./assets/logo.png" />
+    <script defer src="./assets/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          width="100"
+          height="100"
+          src="./assets/logo.png"
+          alt="green-logo"
+        />
+      </div>
+      <nav>
+        <a href="./index.html">home</a>
+        <a href="./about.html">about us</a>
+        <a href="./gallery.html">the gallery</a>
+        <a href="./contact.html">contact us</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>about us</h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id accusantium
+        ratione, architecto, porro error corporis commodi voluptates quia
+        eveniet asperiores perferendis laboriosam provident nulla necessitatibus
+        voluptatibus perspiciatis. Pariatur, dignissimos. Minima?
+      </p>
+
+      <div class="video">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/KJwYBJMSbPI?si=byLtdUJOXOK_YbGk"
+          frameborder="0"
+        ></iframe>
+      </div>
+
+      <section class="what-we-do">
+        <h2>what we do</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, illo.
+        </p>
+        <ul class="bullet points">
+          <li>Lorem ipsum dolor sit amet</li>
+          <li>Consectetur adipiscing elit</li>
+          <li>Sed do eiusmod tempor incididunt</li>
+        </ul>
+        <a href="gallery.html"
+          ><button class="btn-primary">Discover our gallery</button></a
+        >
+      </section>
+      <section class="our-values">
+        <h2>our values</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni commodi
+          quo excepturi laudantium id debitis asperiores, dicta soluta voluptate
+          deserunt, quia suscipit consectetur omnis illo praesentium eligendi,
+          quisquam obcaecati nihil aut alias dolore quis similique ipsum! Magnam
+          commodi, repudiandae rerum, tempore dolores non, explicabo accusantium
+          labore nostrum quibusdam nemo alias!
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+          doloribus corporis soluta adipisci asperiores animi voluptatem
+          consequuntur natus, sequi enim consequatur iusto tenetur deleniti.
+          Deleniti architecto vero recusandae temporibus voluptatibus commodi
+          labore natus nulla aut aperiam id quia dolorum iste incidunt veniam
+          ipsam quo, rem dolor at voluptatem nihil! Laboriosam quam quisquam
+          omnis tenetur necessitatibus maiores excepturi. Aspernatur deleniti id
+          rerum earum officiis animi rem enim, dolore laborum voluptatem.
+          Suscipit consequatur, fugit non minima, dolorem ad iste ex temporibus
+          nobis in maxime ratione porro doloribus cumque delectus, debitis
+          possimus excepturi.
+        </p>
+      </section>
+      <div class="clearfix"></div>
+      <section>
+        <h2>have fun with us</h2>
+        <div>
+          <p id="joke">
+            Question: why does it take pirates forever to go through the
+            alphabet?
+          </p>
+          <button id="click-me" class="btn-secondary">
+            click me for answer
+          </button>
+        </div>
+
+        <div>
+          <p>Okay, do you want to hear another one?</p>
+          <button
+            class="btn-secondary"
+            id="newjoke"
+            onclick="replaceWithText()"
+          >
+            click for more joke
+          </button>
+          <!-- button with the id (newjoke)triggers the replaceWithText function when clicked -->
+        </div>
+
+        <div class="add-to-list">
+          <p>Now, type in anything you like and click button to add it in</p>
+          <input type="text" id="input" />
+          <button class="btn-secondary" onclick="addToList()">add</button>
+          <ul id="itemList"></ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="logo-footer">
+        <img
+          width="100"
+          height="100"
+          src="./assets/logo.png"
+          alt="green-logo"
+        />
+      </div>
+      <div class="form">
+        <p>Sign up to our newsletter</p>
+        <form>
+          <input type="email" placeholder="Enter your email" />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+      <p class="footer-note">
+        @Copyright 2024: Lorem ipsum dolor sit amet consectetur adipisicing.
+      </p>
+    </footer>
+  </body>
+</html>

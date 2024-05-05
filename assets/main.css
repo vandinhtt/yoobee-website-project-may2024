@@ -1,0 +1,230 @@
+@import url(./reset.css);
+@import url(https://necolas.github.io/normalize.css/latest/normalize.cs);
+@import url(./global.css);
+@import url(./variables.css);
+
+/* HOME */
+
+.background-image {
+  display: flex;
+  align-items: center; /* Center vertically */
+  height: 340px;
+  background-image: url(https://picsum.photos/id/1039/900);
+  background-size: cover;
+  background-position: middle center;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  background-color: var(--secondary);
+}
+
+.btn-secondary {
+  background-color: var(--defaultgray);
+}
+
+/* pseudo classes */
+.btn-primary:hover {
+  background-color: var(--defaultblack);
+}
+
+/* pseudo classes */
+.btn-secondary:hover {
+  background-color: var(--defaultgray)
+}
+
+.introduction-photo {
+  max-width: 100%; /* Ensure the container doesn't exceed the screen width */
+  float: left;
+  border-radius: 50%; /* Make the image circular */
+  margin: 0 20px 20px 0;
+  /* animation: rotate 40s linear infinite; */
+  animation-name: rotate;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+  to {
+    rotate: 360deg;
+  }
+}
+
+.introduction-photo img {
+  width: 100%; /* Make the image fill its container */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+}
+
+.hightlight-section {
+  background-color: var(--defaultgray);
+  margin: 20px 0;
+}
+
+#hightlight-heading {
+  color: var(--defaultwhite);
+  padding: 40px 0 0 0;
+  text-align: center;
+}
+
+.hightlight {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hightlight-card {
+  text-align: center;
+  margin: 40px;
+}
+
+.hightlight-card img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.hightlight-card p {
+  color: var(--defaultwhite);
+  margin: 20px 0;
+  max-width: 220px;
+
+}
+article {
+  /* margin: 20px 0 20px 0; */
+  position: relative;
+}
+
+.article-image {
+  max-width: 100%; /* Ensure the container doesn't exceed the screen width */
+  /* overflow: hidden; */
+}
+
+.article-image img {
+  width: 100%; /* Make the image fill its container */
+  height: auto; /* Maintain aspect ratio */
+  /* display: block; */
+}
+
+@media (min-width: 1600px) {
+  article p {
+    column-count: 3;
+    column-gap: 20px;
+    margin: 20px;
+  }
+}
+
+@media (max-width: 1600px) and (min-width: 500px) {
+  article p {
+    column-count: 2;
+    column-gap: 20px;
+    margin: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  article p {
+    column-count: 1;
+    column-gap: 20px;
+    margin: 20px;
+  }
+}
+
+.article-p::first-letter {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--primary);
+  font-size: 48px;
+}
+
+.clearfix {
+  clear: left;
+}
+
+/* THE GALLERY */
+
+.figure-images {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: center; /* Center the items horizontally */
+}
+
+.gallery {
+  width: 250px; /* Width of each gallery item */
+  margin: 20px; /* Margin around each gallery item */
+}
+
+.gallery img {
+  width: 100%; /* Make the images fill the container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+}
+
+.gallery img:hover {
+  filter: brightness(120%);
+}
+
+.gallery figcaption {
+  color: var(--defaultblack);
+  text-align: center;
+  font-size: 1rem;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* ABOUT US */
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+li::before {
+  content: "\2713"; /* Unicode character for a checkmark */
+  color: green;
+  margin-right: 10px;
+}
+
+/* CONTACT US */
+
+.contact {
+  border: 2px solid;
+  object-fit: contain;
+  margin: 20px 0;
+}
+
+.contact p {
+  margin: 20px;
+}
+
+.map {
+  max-width: 100%;
+  margin: 20px 0;
+}
+
+
+/* ABOUT US */
+
+.video {
+  display: flex;
+  margin: 30px 0;
+  justify-content: center;
+}
+
+.video iframe {
+  max-width: 100%; /* Make the video responsive */
+}
+
+
+#input {
+  height: 40px;
+}
+
+.add-to-list {
+  margin-top: 20px;
+}
