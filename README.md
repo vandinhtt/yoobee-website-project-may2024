@@ -17,13 +17,13 @@ There are 4 pages:
 
 ## Folder Structure
 assets
-> favicon.jpeg
-> logo.png
-> global.css
-> reset.css
-> variables.css
-> main.css
-> main.js
+-favicon.jpeg
+-logo.png
+-global.css
+-reset.css
+-variables.css
+-main.css
+-main.js
 index.html
 about.html
 gallery.html
